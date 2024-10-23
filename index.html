@@ -1,0 +1,187 @@
+<!--
+Travel Page Notes:
+-8 sections
+	-hero
+	-introduction
+	-img gallery
+	-content
+	-stat icons
+	-portfolio
+	-img gallery 2
+	-footer
+-No navbar (bad idea, can add your own)
+-images
+	-7 bg images (per section)
+	-1 logo image
+	-3 imgs in activities gallery section(sec3)
+	-1 portfolio image(sec6)
+	-4 img box picture gallery(sec7)
+-body
+	-background-img: (per section)
+		url("");
+		object-fit: contain / fill / cover;
+	-display: flex
+	-flex-direction: column (subjective)
+	-align-item: center
+	-justify-content: space-evenly (or space-between)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sonoma Travel Site</title>
+	<!-- Import for boxicons -->
+    <!--NOTE: Use Font NOT Web Component-->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<!-- Link CSS File-->
+    <link rel="stylesheet" href="./css/barneyTravelStyles.css">
+</head>
+<body>
+	<section>
+		<div class="hero">
+			<img src="./assets/img/travelLogo.png" alt="" class="logo">
+			<h1 class="title">Sonoma</h1>
+			<h2 class="subtitle">Tour and Travel</h2>
+			<div class="downArrow"><i class='bx bx-chevron-down'></i></div> <!--down arrow boxicon-->
+		</div>
+	</section>
+	<section> <!--row flex, maybe wrapper div-->
+		<div class="intro">
+			<div class="introLeft">
+				<h2 class="sectionHeading">Is a trip to Sonoma on your list?</h2>
+			</div>
+			<div class="introRight">
+				<p class="introDesc">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid hic rem iure, nemo aut perferendis, amet impedit animi ratione tempore at neque quo officiis dolorum iste veritatis labore cumque et.
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ratione quo reiciendis. Enim id similique, ipsa dignissimos nesciunt non omnis rem porro. Veritatis voluptatibus, quae nisi numquam beatae vero dolores.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente amet, illum deserunt fugit nesciunt ut earum minima animi aspernatur adipisci blanditiis unde nostrum veniam cupiditate quas distinctio. Nulla, suscipit quaerat!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur recusandae, eligendi laudantium quo incidunt perspiciatis accusamus, hic perferendis tempora itaque aspernatur eveniet mollitia.
+					<br><br>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi amet voluptatibus enim earum fugiat maiores asperiores corrupti aliquid omnis, sed commodi tempora deserunt beatae deleniti possimus pariatur quam culpa dolorem!
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ea quia at aspernatur alias similique assumenda, eius officia labore eveniet! Deleniti quo corporis rerum eius provident nostrum nesciunt reprehenderit nam?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni recusandae veniam doloribus sunt ut esse similique ullam unde modi deleniti nostrum vel, ab temporibus commodi maiores! Incidunt eligendi rerum quaerat?
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptatum id quibusdam esse, molestiae architecto magnam quos sequi, distinctio facere excepturi exercitationem doloremque voluptatibus eaque ad. Accusantium, quae? Illum, dicta.
+				</p>
+				<button class="ctaBtn">read more</button>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="activities">
+			<h2 class="sectionHeading">Experience Vineyards &<br>Beautiful Valleys</h2>
+			<div class="activitiesWrapper"> <!--row flex-->
+				<div class="container"> <!--column flex-->
+					<img src="./assets/img/sonomaAct1.jpg" alt="A vine of concord grapes." class="containerImg">
+					<h3 class="title">Vineyard Tours</h3>
+					<div class="downArrow"><i class='bx bx-chevron-down'></i></div>
+				</div>
+				<div class="container">
+					<img src="./assets/img/sonomaAct2.jpeg" alt="Art in a wine house in Sonoma, CA." class="containerImg">
+					<h3 class="title">Art Houses</h3>
+					<div class="downArrow"><i class='bx bx-chevron-down'></i></div>
+				</div>
+				<div class="container">
+					<img src="./assets/img/sonomaAct3.jpg" alt="Two plates of mexican food on a wood table." class="containerImg">
+					<h3 class="title">Food in the Sun</h3>
+					<div class="downArrow"><i class='bx bx-chevron-down'></i></div> <!--down arrow boxicon-->
+				</div>
+			</div>
+			<button class="ctaBtn">read more</button>
+		</div>
+	</section>
+	<section>
+		<div class="recommendations"> <!--row flex-->
+			<div class="recLeft">
+				<h2 class="sectionHeading">Horses, Flowers & Valleys with Transport from San Francisco</h2>
+			</div>
+			<div class="recRight">
+				<div class="content">
+					<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid totam asperiores, tenetur ipsum ipsam aspernatur, consectetur dicta nisi sed tempora provident eius repellendus facilis, cum velit distinctio odio dolores hic?
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum molestiae facere quisquam voluptatibus amet cum. A earum tenetur dicta, suscipit voluptates non deserunt repudiandae sapiente eum, labore, ad ex vero.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas hic delectus corporis doloribus. Iure quia, rem accusantium harum optio ea, omnis magni labore, modi architecto quo quae natus nemo ullam.
+					</p>
+					<h3>What To Wear</h3>
+					<p>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id incidunt sequi magni! Sed provident, repellendus animi iure laboriosam doloribus alias consectetur quidem natus fugiat, quod amet cumque. Omnis, praesentium quos?
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ab a iste quidem voluptas nam quaerat ex atque. Rerum, nulla! Quisquam cum ducimus accusamus ipsa accusantium quidem vero, mollitia deleniti.
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo provident iure est aliquam consequuntur dolorem voluptates libero veniam pariatur perferendis facere hic quisquam at officiis obcaecati natus ducimus, odit aut.
+					</p>
+					<h3>Reservations</h3>
+					<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit libero, natus quod, magni labore illum laboriosam mollitia quam accusantium doloremque qui nobis distinctio quae, molestiae blanditiis sequi delectus iusto corporis!
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel recusandae fugit numquam aliquam commodi officiis molestiae, culpa eius consequatur a consequuntur inventore illo eos vitae rerum aliquid et vero quia!	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, officiis voluptates laudantium id voluptatem, eum reiciendis architecto sapiente commodi optio impedit repudiandae odit aut a tenetur labore explicabo odio laboriosam.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="stats"> <!--row flex-->
+			<div class="statWrapper">
+				<h3>12</h3>
+				<p>Hotels To Stay</p>
+			</div>
+			<div class="statWrapper">
+				<h3>250</h3>
+				<p>Places To Visit</p>
+			</div>
+			<div class="statWrapper">
+				<h3>600</h3>
+				<p>Repeat Visitors</p>
+			</div>
+			<div class="statWrapper">
+				<h3>100%</h3>
+				<p>Safe & Secure</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="authorInfo"> <!--column flex-->
+			<img src="./assets/img/authorImg.jpg" alt="Myself on a beach cliff on the southwest coast of California" class="authorImg">
+			<p>
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perspiciatis hic recusandae, dolores vitae cim, accusantium dolore, voluptatum dolorum quia odit consequatur? Aspernatur, magnam est ad suscipit mollitia odio iure.
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eaque reprehenderit quibusdam similique eos vitae id in quas iste fuga facere, nihil libero. Pariatur, maxime illum mollitia consequuntur cim veritatis."
+			</p>
+			<h3>Nick Barney</h3>
+			<div class="downArrow"><i class='bx bx-chevron-down'></i></div> <!--down arrow boxicon-->
+		</div>
+	</section>
+	<section>
+		<div class="gallery"> <!--Row flex; we can ignore scroll function and icons;-->
+			<img src="./assets/img/sonomaGallery1.jpeg" alt="Some red flowers and local foliage of Sonoma." class="galleryImg">
+			<img src="./assets/img/sonomaGallery2.jpeg" alt="A back alley in Sonoma with a side entrance to a restaurant." class="galleryImg">
+			<img src="./assets/img/sonomaGallery3.jpg" alt="A sangria garnished with a roasted blood orange." class="galleryImg">
+			<img src="./assets/img/sonomaGallery4.jpeg" alt="Local agave plants growing in the Sonoma valley." class="galleryImg">
+		</div>
+	</section>
+	<footer> <!--row flex-->
+		<div class="leftFoot"> <!--column flex-->
+			<h2>Contact Us</h2>
+			<ul>
+				<li>Toll Free: 123-123-4567</li>
+				<li>Sonoma: 123-123-4567</li>
+				<li>Fax: 123-123-4567</li>
+				<li>Email: info@sonoma.com</li>
+			</ul>
+			<div class="iconWrapper">
+				<i class='bx bxl-facebook'></i>
+				<i class='bx bxl-twitter'></i>
+				<i class='bx bxl-instagram'></i>
+				<i class='bx bxl-pinterest-alt'></i>
+				<i class='bx bxl-linkedin'></i>
+			</div>
+		</div>
+		<div class="rightFoot"> <!--column flex-->
+			<form action="">
+				<input type="text" name="name" id="name" placeholder="Name">
+				<input type="email" name="email" id="email" placeholder="Email">
+				<textarea name="message" id="message" placeholder="Message"></textarea>
+				<button type="submit" class="ctaBtn">submit</button>
+			</form>
+		</div>
+	</footer>
+</body>
+</html>

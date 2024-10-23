@@ -1,0 +1,385 @@
+/*Travel Page Stylesheet*/
+/*Import the Google API Font*/
+/*Google Fonts > Merriweather > Get Font > Embed Code > @import (CSS: omit <style> enclosing tags*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*General Styles*/
+* {
+	/*Ensures background images cover whole body and box-model*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*Variables*/
+	--fontColorPrimary: #e59cab;
+	--fontColorSecondary: #DDD;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+h1, h2, h3, .ctaBtn {
+	/*Primary Font: Merriweather*/
+	font-family: 'Merriweather','Times New Roman', Times, serif;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+p, li {
+	/*Secondary Font: Calibri*/
+	font-family: Calibri;
+}
+
+.ctaBtn {
+	width: 110px;
+	height: 33px;
+	font-size: 9pt;
+	background-color: var(--fontColorPrimary);
+	border: 1px solid rgb(187, 114, 127);
+}
+
+/*Hero Section Styles*/
+.hero {
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url("../assets/img/sonomaBg1.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.hero .logo {
+	margin-top: 60px;
+	margin-bottom: 10px;
+	width: 150px;
+	height: 150px;
+}
+
+.hero .title {
+	margin-bottom: 20px;
+	font-size: 85px;
+	color: var(--fontColorPrimary);
+}
+
+.hero .subtitle {
+	font-family: Calibri;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 2px;
+	color: var(--fontColorSecondary);
+}
+
+.hero .downArrow > i{
+	margin-bottom: 80px;
+	font-size: 90px;
+	color: var(--fontColorPrimary);
+}
+
+/*Intro Section Styles*/
+.intro {
+	padding-bottom: 100px;
+	padding-top: 50px;
+	display: flex;
+	/*no align-items: center here*/
+	justify-content: space-evenly;
+	background-image: url("../assets/img/sonomaBg2.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.introLeft {
+	margin-right: 20%;
+}
+
+.introLeft .sectionHeading{
+	min-width: 400px;
+	margin-left: 60px;
+	font-size: 70px;
+	color: var(--fontColorPrimary);
+	/*background-color: rgba(15,15,15,.25);*/
+}
+
+.introRight .introDesc {
+	margin-top: 10px;
+	margin-right: 60px;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	color: var(--fontColorSecondary);
+	background-color: rgba(15,15,15,.28);
+}
+
+/*Activities Section Styles*/
+.activities {
+	background-image: url("../assets/img/sonomaBg3.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.activities .sectionHeading {
+	padding: 40px 0;
+	text-align: center;
+	font-size: 40px;
+	color: var(--fontColorPrimary);
+}
+
+.activities .activitiesWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.activities .activitiesWrapper .container {
+	margin: 0 7px;
+}
+
+.activities .activitiesWrapper .container .containerImg {
+	width: 315px;
+	height: 400px;
+	margin-bottom: 0;
+}
+
+.activities .activitiesWrapper .container .title {
+	position: relative;
+	bottom: 88px;
+	padding-left: 15px;
+	color: var(--fontColorSecondary);
+	background: linear-gradient(180deg, rgba(75, 75, 75, 0.07) 40%, rgba(75,75,75,0.15) 85%);
+}
+
+.activities .activitiesWrapper .container .downArrow {
+	position: relative;
+	bottom: 88px;
+	padding-left: 0px;
+	font-size: 52px;
+	color: var(--fontColorPrimary);
+	background: linear-gradient(180deg, rgba(75,75,75,0.15) 40%, rgba(75,75,75,0.75) 90%);
+}
+
+.activities .ctaBtn {
+	display: block; /*removes inline so button can be centered*/
+	margin: auto;
+	/* need to adjust position due to title/downarrow positionining (squeeze up)*/
+	position: relative;
+	bottom: 50px;
+}
+
+/*Recommendations Section Styles*/
+.recommendations {
+	padding-top: 50px;
+	display: flex;
+	/*no align-items: center here*/
+	justify-content: space-evenly;
+	background-image: url("../assets/img/sonomaBg4.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.recommendations .recLeft {
+	margin-right: 50px;
+}
+
+.recommendations .recLeft .sectionHeading {
+	min-width: 550px;
+	margin-left: 60px;
+	font-size: 65px;
+	color: var(--fontColorPrimary);
+}
+
+.recommendations .recRight .content {
+	margin-top: 10px;
+	margin-right: 60px;
+	margin-bottom: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	color: var(--fontColorSecondary);
+	background-color: rgba(15,15,15,.25);
+}
+
+.recommendations .recRight .content p {
+	margin-bottom: 20px;
+}
+
+.recommendations .recRight .content p:last-child {
+	margin-bottom: 0;
+}
+
+.recommendations .recRight .content h3 {
+	margin-bottom: 20px;
+}
+
+/*Stats Section Styles*/
+.stats {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	background-image: url("../assets/img/sonomaBg5.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.stats .statWrapper {
+	margin: 200px 0;
+	width: 190px;
+	height: 190px;
+	border-radius: 50%;
+	background-color: rgb(0,0,0);
+	text-align: center;
+}
+
+.stats .statWrapper h3 {
+	margin-top: 18%;
+	font-size: 60px;
+	color: var(--fontColorPrimary);
+}
+
+.stats .statWrapper p {
+	font-size: 11pt;
+	font-weight: 100;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--fontColorSecondary);
+}
+
+/*AuthorInfo Section Styles*/
+.authorInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background-image: url("../assets/img/sonomaBg6.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+}
+
+.authorInfo .authorImg {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.authorInfo p {
+	margin-bottom: 10px;
+	max-width: 500px;
+	text-align: center;
+	color: var(--fontColorSecondary);
+	padding: 5px;
+	background-color: rgba(15,15,15,.30);
+	border-radius: 5px;
+}
+
+
+.authorInfo h3 {
+	color: var(--fontColorSecondary);
+	padding: 5px;
+	border-radius: 5px;
+	background-color: rgba(15,15,15,.25);
+}
+
+.authorInfo .downArrow > i{
+	margin-bottom: 40px;
+	font-size: 90px;
+	color: var(--fontColorPrimary);
+}
+
+/*Gallery Section Styles*/
+.gallery{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gallery .galleryImg {
+	width: 25%;
+}
+
+
+/*Footer Section Styles*/
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-image: url("../assets/img/sonomaBg7.jpeg");
+	background-position: center;
+  	background-repeat: no-repeat;
+ 	background-size: cover;
+	padding: 50px 0;
+}
+
+footer .leftFoot{
+	margin-left: 60px;
+}
+
+footer .leftFoot h2 {
+	margin-bottom: 10px;
+	font-size: 70px;
+	color: var(--fontColorPrimary);
+}
+
+footer .leftFoot ul {
+	margin-bottom: 10px;
+	max-width: 180px; /*fixes background color stretch*/
+	list-style: none;
+	color: var(--fontColorSecondary);
+	padding: 5px;
+	border-radius: 5px;
+	background-color: rgba(15,15,15,.25);
+}
+
+footer .leftFoot .iconWrapper i{
+	color: var(--fontColorPrimary);
+	font-size: 30px;
+	padding-right: 5px;
+}
+
+footer .rightFoot {
+	width: 30%;
+	margin-right: 60px;
+}
+
+footer .rightFoot form {
+	display: flex;
+	flex-direction: column;
+}
+
+footer .rightFoot form input {
+	height: 32px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	color: rgb(255,255,255);
+	background-color: transparent;
+	border: 2px solid rgba(255,255,255,0.7);
+	border-radius: 2px;
+}
+
+footer .rightFoot form input::placeholder {
+	color: rgba(255,255,255,0.7);
+}
+
+footer .rightFoot form textarea {
+	height: 100px;
+	resize: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+	color: rgb(255,255,255);
+	background-color: transparent;
+	border: 2px solid rgba(255,255,255,0.7);
+	border-radius: 2px;
+}
+
+footer .rightFoot form textarea::placeholder {
+	color: rgba(255,255,255,0.7);
+	font-family: Arial, Helvetica, sans-serif;
+}
