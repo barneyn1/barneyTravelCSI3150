@@ -40,6 +40,19 @@ p, li {
 	border: 1px solid rgb(187, 114, 127);
 }
 
+.ctaBtn:hover {
+	cursor: pointer;
+}
+
+.downarrow {
+	color: var(--fontColorPrimary);
+}
+
+.downArrow i:hover {
+	cursor: pointer;
+	color: #eee;
+}
+
 /*Hero Section Styles*/
 .hero {
 	padding: 100px 0;
@@ -78,6 +91,10 @@ p, li {
 	margin-bottom: 80px;
 	font-size: 90px;
 	color: var(--fontColorPrimary);
+}
+
+.hero .downArrow > i:hover {
+	color: #eee;
 }
 
 /*Intro Section Styles*/
@@ -288,12 +305,15 @@ p, li {
 	background-color: rgba(15,15,15,.25);
 }
 
-.authorInfo .downArrow > i{
+.authorInfo .downArrow > i {
 	margin-bottom: 40px;
 	font-size: 90px;
 	color: var(--fontColorPrimary);
 }
 
+.authorInfo .downArrow > i:hover {
+	color: #eee;
+}
 /*Gallery Section Styles*/
 .gallery{
 	display: flex;
@@ -341,6 +361,7 @@ footer .leftFoot .iconWrapper i{
 	color: var(--fontColorPrimary);
 	font-size: 30px;
 	padding-right: 5px;
+	cursor: pointer;
 }
 
 footer .rightFoot {
